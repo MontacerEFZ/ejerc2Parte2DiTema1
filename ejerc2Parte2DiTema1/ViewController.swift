@@ -9,11 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var txtIndice: UITextField!
+    @IBOutlet weak var lbResultado: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
 
+    @IBAction func btnVerExamen(_ sender: Any) {
+    }
 }
 
