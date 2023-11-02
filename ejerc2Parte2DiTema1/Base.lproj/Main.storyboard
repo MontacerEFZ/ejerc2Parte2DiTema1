@@ -28,33 +28,33 @@
                                     <action selector="btnVerExamen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YjC-tc-tuC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywL-Ot-NPp">
-                                <rect key="frame" x="176" y="595" width="111" height="30"/>
-                                <state key="normal" title="añadir examen"/>
-                                <connections>
-                                    <segue destination="PU5-dz-oZD" kind="show" identifier="EXAMEN" id="Suv-6U-atE"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiJ-1I-54P">
                                 <rect key="frame" x="40" y="398" width="334" height="131"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywL-Ot-NPp">
+                                <rect key="frame" x="141" y="600" width="111" height="30"/>
+                                <state key="normal" title="añadir examen"/>
+                                <connections>
+                                    <segue destination="PU5-dz-oZD" kind="show" identifier="EXAMEN" id="Suv-6U-atE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ywL-Ot-NPp" secondAttribute="trailing" constant="162" id="Bak-we-Pbm"/>
                             <constraint firstItem="uiJ-1I-54P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Khv-K6-4Y4"/>
                             <constraint firstItem="qcO-ez-ufm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="O7T-dY-Lh1"/>
                             <constraint firstItem="Zs6-ea-Nru" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="SPk-ot-7Fo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uiJ-1I-54P" secondAttribute="trailing" constant="40" id="TaW-nI-lSb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qcO-ez-ufm" secondAttribute="trailing" constant="40" id="f0I-ng-Use"/>
-                            <constraint firstItem="ywL-Ot-NPp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="gxd-Tb-Aj9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ywL-Ot-NPp" secondAttribute="trailing" constant="192" id="k4s-Um-ceb"/>
                             <constraint firstItem="uiJ-1I-54P" firstAttribute="top" secondItem="Zs6-ea-Nru" secondAttribute="bottom" constant="270" id="oLz-Pk-ngW"/>
                             <constraint firstItem="Zs6-ea-Nru" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="uNd-Aq-Ca3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ywL-Ot-NPp" secondAttribute="bottom" constant="237.5" id="vmo-UZ-c5p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ywL-Ot-NPp" secondAttribute="bottom" constant="232" id="uSv-s8-4Fq"/>
+                            <constraint firstItem="ywL-Ot-NPp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="xOE-Fg-xBq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -89,8 +89,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3G7-5y-3yD">
-                                <rect key="frame" x="104" y="541" width="126" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3G7-5y-3yD">
+                                <rect key="frame" x="160" y="550" width="126" height="30"/>
                                 <state key="normal" title="insertar examen"/>
                                 <connections>
                                     <action selector="btnInsertarExamen:" destination="PU5-dz-oZD" eventType="touchUpInside" id="zKn-uR-Oe1"/>
@@ -103,14 +103,14 @@
                             <constraint firstItem="nJu-qH-lAf" firstAttribute="top" secondItem="AZ8-Ee-njq" secondAttribute="bottom" constant="76" id="8i5-t8-WQE"/>
                             <constraint firstItem="DdR-0x-yzp" firstAttribute="leading" secondItem="C1F-nI-Vbk" secondAttribute="leading" constant="20" id="A06-08-aTR"/>
                             <constraint firstItem="AZ8-Ee-njq" firstAttribute="leading" secondItem="C1F-nI-Vbk" secondAttribute="leading" constant="20" id="DZ9-0Z-Jbs"/>
-                            <constraint firstItem="C1F-nI-Vbk" firstAttribute="bottom" secondItem="3G7-5y-3yD" secondAttribute="bottom" constant="237" id="N0v-V8-IND"/>
-                            <constraint firstItem="C1F-nI-Vbk" firstAttribute="trailing" secondItem="3G7-5y-3yD" secondAttribute="trailing" constant="184" id="SF4-mn-RKl"/>
+                            <constraint firstItem="3G7-5y-3yD" firstAttribute="leading" secondItem="C1F-nI-Vbk" secondAttribute="leading" constant="160" id="IRs-qY-n4i"/>
                             <constraint firstItem="AZ8-Ee-njq" firstAttribute="top" secondItem="DdR-0x-yzp" secondAttribute="bottom" constant="47" id="VZK-yT-kdS"/>
                             <constraint firstItem="C1F-nI-Vbk" firstAttribute="trailing" secondItem="DdR-0x-yzp" secondAttribute="trailing" constant="20" id="YPa-H1-mjX"/>
+                            <constraint firstItem="C1F-nI-Vbk" firstAttribute="bottom" secondItem="3G7-5y-3yD" secondAttribute="bottom" constant="228" id="c98-u5-JTT"/>
                             <constraint firstItem="C1F-nI-Vbk" firstAttribute="trailing" secondItem="AZ8-Ee-njq" secondAttribute="trailing" constant="20" id="iuW-1q-i2J"/>
                             <constraint firstItem="C1F-nI-Vbk" firstAttribute="trailing" secondItem="nJu-qH-lAf" secondAttribute="trailing" constant="20" id="jsD-bW-RQI"/>
                             <constraint firstItem="nJu-qH-lAf" firstAttribute="leading" secondItem="C1F-nI-Vbk" secondAttribute="leading" constant="20" id="kSV-qW-zfo"/>
-                            <constraint firstItem="3G7-5y-3yD" firstAttribute="leading" secondItem="C1F-nI-Vbk" secondAttribute="leading" constant="184" id="nNw-ve-ODZ"/>
+                            <constraint firstItem="C1F-nI-Vbk" firstAttribute="trailing" secondItem="3G7-5y-3yD" secondAttribute="trailing" constant="128" id="nEf-fx-gd1"/>
                             <constraint firstItem="DdR-0x-yzp" firstAttribute="top" secondItem="C1F-nI-Vbk" secondAttribute="top" constant="81" id="yOk-y8-22G"/>
                         </constraints>
                     </view>
