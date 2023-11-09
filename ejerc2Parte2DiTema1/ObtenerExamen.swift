@@ -9,4 +9,8 @@ import Foundation
 
 protocol ObtenerExamen {
     func obtener(dato: Examen)
+    func eliminar(posicion: Int)
+    func modificar(posicion: Int, nuevoExamen: Examen)
+    
+    
 }

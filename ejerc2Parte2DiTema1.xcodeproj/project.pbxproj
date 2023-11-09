@@ -18,6 +18,8 @@
 		1B8C73D02AF392AC000023F0 /* Examen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8C73CF2AF392AC000023F0 /* Examen.swift */; };
 		1B8C73D82AF39799000023F0 /* InsertarExamenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8C73D72AF39799000023F0 /* InsertarExamenViewController.swift */; };
 		1B8C73DD2AF39B19000023F0 /* ObtenerExamen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8C73DC2AF39B19000023F0 /* ObtenerExamen.swift */; };
+		1BF32EC82AFCD84200B4B132 /* CeldaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF32EC72AFCD84200B4B132 /* CeldaTableViewCell.swift */; };
+		1BF32ECD2AFCE32200B4B132 /* EditarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF32ECC2AFCE32200B4B132 /* EditarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		1B8C73CF2AF392AC000023F0 /* Examen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examen.swift; sourceTree = "<group>"; };
 		1B8C73D72AF39799000023F0 /* InsertarExamenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertarExamenViewController.swift; sourceTree = "<group>"; };
 		1B8C73DC2AF39B19000023F0 /* ObtenerExamen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObtenerExamen.swift; sourceTree = "<group>"; };
+		1BF32EC72AFCD84200B4B132 /* CeldaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaTableViewCell.swift; sourceTree = "<group>"; };
+		1BF32ECC2AFCE32200B4B132 /* EditarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				1B8C73A92AF39230000023F0 /* Info.plist */,
 				1B8C73D72AF39799000023F0 /* InsertarExamenViewController.swift */,
 				1B8C73DC2AF39B19000023F0 /* ObtenerExamen.swift */,
+				1BF32EC72AFCD84200B4B132 /* CeldaTableViewCell.swift */,
+				1BF32ECC2AFCE32200B4B132 /* EditarViewController.swift */,
 			);
 			path = ejerc2Parte2DiTema1;
 			sourceTree = "<group>";
@@ -279,6 +285,8 @@
 				1B8C73D82AF39799000023F0 /* InsertarExamenViewController.swift in Sources */,
 				1B8C73D02AF392AC000023F0 /* Examen.swift in Sources */,
 				1B8C739C2AF3922F000023F0 /* AppDelegate.swift in Sources */,
+				1BF32EC82AFCD84200B4B132 /* CeldaTableViewCell.swift in Sources */,
+				1BF32ECD2AFCE32200B4B132 /* EditarViewController.swift in Sources */,
 				1B8C739E2AF3922F000023F0 /* SceneDelegate.swift in Sources */,
 				1B8C73DD2AF39B19000023F0 /* ObtenerExamen.swift in Sources */,
 			);

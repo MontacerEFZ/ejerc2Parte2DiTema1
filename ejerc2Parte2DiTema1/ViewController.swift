@@ -7,32 +7,47 @@
 
 import UIKit
 
-class ViewController: UIViewController, ObtenerExamen { //ObtenerExamen a mano q es protocolo q hemos creado
-
-    @IBOutlet weak var txtIndice: UITextField!
-    @IBOutlet weak var lbResultado: UILabel!
+class ViewController: UIViewController, ObtenerExamen, UITableViewDelegate, UITableViewDataSource {
+    //ObtenerExamen a mano q es protocolo q hemos creado
     
+    @IBOutlet weak var tablaExamen: UITableView!
     var listaExamenes: [Examen]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         listaExamenes = []
+        tablaExamen.delegate = self
+        tablaExamen.dataSource = self
     }
-
-
-    @IBAction func btnVerExamen(_ sender: Any) {
-        let indice = txtIndice.text!
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //devuelve int
+        listaExamenes.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celda = tableView.dequeueReusableCell(withIdentifier: "CELDA", for: indexPath) as! CeldaTableViewCell
         
-        if !indice.isEmpty && Int(indice)! >= 1 &&  Int(indice)! >= listaExamenes.count{
-        lbResultado.text = listaExamenes[Int(indice)! - 1].toString()
-        }else{
-            lbResultado.text = "ERROR en el indice"
-        }
+        let examen = listaExamenes[indexPath.row]
+        celda.lbNombre.text = examen.nombre
+        celda.lbNota.text = String(examen.notaFinal)
+        
+        return celda
     }
     
     func obtener(dato: Examen) {
         listaExamenes.append(dato)
+        tablaExamen.reloadData()
+    }
+    
+    func eliminar(posicion: Int) {
+        listaExamenes.remove(at: posicion)
+        tablaExamen.reloadData()
+    }
+    
+    func modificar(posicion: Int, nuevoExamen: Examen) {
+        listaExamenes[posicion] = nuevoExamen
+        tablaExamen.reloadData()
     }
     
     //prepare + elegir la opcion del segue + tabulador
@@ -42,6 +57,14 @@ class ViewController: UIViewController, ObtenerExamen { //ObtenerExamen a mano q
                 InsertarExamenViewController
             destino.delegate = self
         }
+        if segue.identifier == "EDITAR" {
+            let destino = segue.destination as!
+                EditarViewController
+            destino.delegate = self
+            destino.posicion = tablaExamen.indexPathForSelectedRow!.row
+            destino.examen = listaExamenes[tablaExamen.indexPathForSelectedRow!.row]
+        }
+        
     }
 }
 
